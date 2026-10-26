@@ -1,0 +1,21 @@
+[general]
+name=Location Search Bar
+qgisMinimumVersion=3.22
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=One search box for QGIS like Google Maps and Google Earth: places, addresses, coordinates in any format, UTM/MGRS, Plus Codes, map links and your own layer data.
+version=3.1.4
+author=RAKESH SOLANKI
+email=roksolanki2411@gmail.com
+about=A search panel above the Layers panel (Google Earth Pro layout). Type a place or address and get live suggestions from Photon, Esri and optionally Google Places, with OpenStreetMap Nominatim and deep search on Enter. Results near the current map view rank first. Understands decimal degrees, DMS and DDM in any order with hemisphere letters, lat/lon swaps, Indian numerals, UTM, MGRS, Plus Codes (full and short with a locality), geohash, WKT, EPSG-tagged and bare projected coordinates, and links from Google Maps, Google Earth, OpenStreetMap, Bing, Apple Maps, Waze and geo: URIs. Also searches attribute values of loaded layers, spatial bookmarks, recent searches and saved places. Shows a Google-style pin, area outlines and a place card with every coordinate format, copy buttons and links to Google Maps, Earth and Street View. Includes a What's here? tool and right-click map menu. Never blocks QGIS and uses the QGIS proxy settings.
+tracker=https://github.com/Rakes001160/Location-Search-bar-for-qgis/issues
+repository=https://github.com/Rakes001160/Location-Search-bar-for-qgis
+homepage=https://github.com/Rakes001160/Location-Search-bar-for-qgis
+tags=search,geocoding,google maps,google earth,coordinates,utm,mgrs,plus codes,nominatim,photon,esri,navigation,location
+category=Web
+icon=icon.png
+license=GPL-2.0-or-later
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+changelog=3.1.4 Qt6 (QGIS 4) compatibility: scoped QgsFeatureRequest and QgsTask flags, exec() for dialogs, no QFontMetrics.width. 3.1.3 Fixed a QGIS crash when searching one place after another (the animated pin changed its outline without telling Qt, corrupting the map item index). Safer cleanup of pins, animations and network replies. 3.1.2 Prepared for the QGIS plugin repository: passes Bandit, Detect Secrets and Flake8 checks, GPL licence added, errors logged instead of ignored. 3.1.1 Fixed: pin and label stayed in the top-left corner of the map instead of on the found location. 3.1.0 Google Maps style pin: name and address under the pin with white halo, drop-in bounce, ripple rings and label fade. Auto-locate when coordinates or map links are typed or pasted. Arrow keys preview results on the map. Flash-again button. 3.0.0 Rewritten: parallel non-blocking searches through the QGIS network manager, many more coordinate formats and map links, layer value search, place card, What's here, Google-style pin and outlines, settings dialog. History and favourites from 2.x are kept.
